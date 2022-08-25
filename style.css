@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-family)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+.background {
+    background-image: url('./assets/background.svg');
+}
+
+header,
+section,
+.footer {
+    margin: 0 4rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.logo,
+.part3,
+.vendas div h3,
+.tema,
+.artists {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+ /* so estou usando o span para mudar a cor, posso substituir todos por um so */
+header span,
+.part3 span,
+.tema span,
+.menu a:hover,
+.subtitle .rank,
+.artists span,
+.artist .fotos,
+.todos p:hover,
+.news span {
+    color: #ff5b50;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.menu a,
+.lorem p,
+.subtitle,
+input,
+button {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.wallet a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+.wallet p {
+    color: var(--black-text);
+    padding: 0 0.5rem;
+    font-size: larger;
+}
+
+.apresentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .part1 {
+    width: 23rem;
+    margin: 2rem 0;
+}
+
+section .text p {
+    padding-bottom: 2rem;
+}
+
+section .part2 {
+    display: flex;
+    align-items: flex-end;
+}
+
+section .part2 p {
+    padding-left: 0.5rem;
+    padding-bottom: 0.3rem;
+}
+
+section .part3 {
+    margin: 0 7rem;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.img img {
+    max-width: 18rem;
+}
+
+.information {
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.vendas {
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vendas div {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendas div p {
+    color: var(--subtitle-color);
+}
+
+hr{
+    border: solid 1px;
+    border-color: var(--subtitle-color);
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.lorem {
+    padding: 0 7rem;
+}
+
+.lorem p {
+    padding-top: 3rem;
+}
+
+.banner img {
+    max-width: 69rem;
+}
+
+.tema {
+    padding: 9rem 0;
+}
+
+.populares {
+    display: flex;
+    justify-content: space-between;
+}
+
+.populares1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.populares2 {
+    width: 22rem;
+}
+
+.bottom {
+    margin-bottom: 4rem;
+}
+
+.title,
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h3,
+.news h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.subtitle {
+    margin: 3rem 0;
+}
+
+.artists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.artist {
+    background-color: var(--card-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17rem;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+
+.artist:hover,
+.artist:hover .fotos{
+    background-color: var(--color-logo);
+    color: var(--text-color);
+}
+
+.artist .name{
+    padding-bottom: 1rem;
+}
+
+.artist img{
+    padding-right: 2rem;
+}
+
+.todos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+footer{
+    background-color: var(--card-color);
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.arrow{
+    background-color: var(--color-logo);
+}
+
+.contact-about{
+    display: flex;
+    
+}
+
+.news{
+    padding: 4rem 3rem 4rem 0;
+    width: 30rem;
+}
+
+.news h3{
+    padding-bottom: 2rem;
+}
+
+input{
+    background-color: var(--color-input);
+    padding: 1rem;
+}
+
+button{
+    padding: 1rem;
+    color: var(--black-text);
+    cursor: pointer;
+}
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50rem;
+}
+
+.about p{
+    padding-top: 1rem;
+    color: var(--subtitle-color);
+}
+
+.footer-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.site p{
+    color: var(--subtitle-color)
+}
+
+.redes img{
+    padding-right: 2rem;
+}
+
+.about p:hover,
+.redes img:hover{
+    color: var(--text-color);
+    cursor: pointer;
+}
